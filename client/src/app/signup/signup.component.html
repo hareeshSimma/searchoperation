@@ -1,0 +1,72 @@
+<div class=" text-center container">
+    <div class="col-sm-4 get_form_inner">
+        <h3 class="__head">Registeration Page</h3>
+
+        <h5 class="red">(Please click the text field)</h5>
+
+
+        <form name="registerForm">
+
+            <div class="group">
+                <input type="text" name="FirstName" required="required" [(ngModel)]="fname">
+                <span class="highlight"></span>
+                <span class="bar"></span><label>First Name</label>
+            </div>
+            <div class="group">
+                <input type="text" name="LastName" required="required" [(ngModel)]="lname">
+                <span class="highlight"></span>
+                <span class="bar"></span><label>Last Name</label>
+
+            </div>
+            <div class="group">
+                <input type="email" name="Email" required="" [(ngModel)]="email">
+                <span class="smessage"></span>
+                <span class="highlight"></span>
+                <span class="bar"></span><label>Email Adress</label>
+
+            </div>
+            <div class="group">
+                <input type="text" name="Email" required="" [(ngModel)]="username">
+                <span class="smessage"></span>
+                <span class="highlight"></span>
+                <span class="bar"></span><label>Emp User Name</label>
+
+            </div>
+
+            <div class="group">
+                <input type="password" [(ngModel)]="pswd" name="password" required="required"><input type="hidden" name="profile" value="Trainer">
+                <span class="highlight"></span>
+                <span class="bar"></span><label>Password</label>
+
+            </div>
+            <div class="group">
+                <input type="text" name="Email" required="" [(ngModel)]="empdes">
+                <span class="smessage"></span>
+                <span class="highlight"></span>
+                <span class="bar"></span><label>Emp Designation</label>
+
+            </div>
+
+
+            <div class="group">
+                <input type="text" name="Phone" required="required" [(ngModel)]="mobileno">
+                <span class="highlight"></span>
+                <span class="bar"></span><label>Phone Number</label>
+            </div>
+
+
+            <div class="form-group text-center">
+                <div>
+                    <button type="submit" class="btn btn-info" (click)="register()">Sign-up Now</button>
+                </div>
+                <div class="container-fluid loading hidden">
+                    <label><span class="fa fa-refresh fa-spin"></span>
+														 Signing up...</label>
+                </div>
+            </div>
+            <div class="text-right">
+                <p class="text-right">Already Registered? <a routerLink="/login">Login here</a></p>
+            </div>
+        </form>
+    </div>
+</div>
